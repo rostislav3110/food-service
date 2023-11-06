@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/switch.css">
+  <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    /> 
+</head>
+<body>
+ 
+  <div class="toolbar">
+    <!-- Розмітка перемикача теми -->
+    <div class="theme-switch">
+      <div class="theme-switch__control">
+        <input
+          class="theme-switch__toggle"
+          type="checkbox"
+          name="theme"
+          id="theme-switch-toggle"
+          aria-label="Перемикаж між темню та світлою темою"
+        />
+        <label
+          aria-hidden="true"
+          class="theme-switch__track"
+          for="theme-switch-toggle"
+        >
+        </label>
+        <div aria-hidden="true" class="theme-switch__marker"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <ul class="menu js-menu"></ul>
+
+  <script src="./index.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
